@@ -31,7 +31,7 @@ cd SentinelOne-Removal-Tool
 3. **Run the script (Administrator):**
 
 ```bash
-python remove_sentinelone.py
+python sent-killer.py
 ```
 
 4. **Restart your computer** to complete the removal process.
