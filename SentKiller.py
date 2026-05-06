@@ -10,7 +10,8 @@ def run_cmd(command):
 services = ["SentinelAgent", "SentinelMonitor"]
 for service in services:
     run_cmd = f'net stop {service}'
-    subprocess.call(run_as_admin(run_as_admin(run_as_admin(run_as_admin(run_as_admin(run_as_admin(run_as_admin(run_as_admin(run_as_admin(run_as_admin(run_as_admin(run_as_admin(run_as_admin(run_as_admin(run_as_admin(run_as_admin(run_as_admin(run_as_admin(run_as_admin(run_as_admin(run_as_admin(run_as_admin(subprocess.run(["sc", "stop", service], shell=True)
+    subprocess.call(run_as_admin(["sc", "stop", service]))
+    #subprocess.call(run_as_admin(subprocess.run(["sc", "stop", service], shell=True)))
 
 # Kill running processes associated with SentinelOne
 sentinel_processes = ["SentinelAgent.exe", "SentinelCtl.exe"]
